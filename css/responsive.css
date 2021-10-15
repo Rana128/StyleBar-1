@@ -1,0 +1,46 @@
+@media(max-width:575px) and (min-width:320px){
+    .navbar-light .navbar-brand {
+        width: 50%;
+    }
+    .big-tagline h2 {
+        font-size: 25px;
+    }
+    .about_section h2 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .team {
+        margin-bottom: 23px;
+    }
+    .big-tagline .lead {
+        font-size: 16px;
+    }
+    .btn_contact {
+        margin-top: 4px;
+    }
+    .our_part h1 {
+        font-size: 30px;
+    }
+    .service_wrap h1 {
+        font-size: 30px;
+        margin-top: 17px;
+    }
+    .service_wrap span {
+        width: 30%;
+    }
+}
+@media(max-width:576px){
+    .mission_part button {
+        padding: 4px 6px;
+        margin-left: 12px;
+        margin-bottom: 6px;
+    }
+    .big-tagline h2 {
+        font-size: 45px;
+    }
+}
+@media(max-width:320px){
+    .mission_part button {
+        padding: 0px 3px;
+    }
+}

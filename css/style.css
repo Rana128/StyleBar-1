@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-light .navbar-nav .nav-link{
+    position: relative;
+	padding: 10px 20px;
+	color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#fff;
+}
+.navbar-light .navbar-nav .nav-link::after {
+	content: "";
+    background: #ed2d46;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	border-radius: 0px 50px 0px 0px; 
+    transition: .3s linear;
+}
+.navbar-light .navbar-nav .nav-link:hover:after{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 0px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-item{	
+	background: #010101;
+	position: relative;
+    text-transform: uppercase;
+	z-index: 0;
+}
+.banner{
+    background-image: url(../images/slider-img-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 89vh;
+    position: relative;
+    z-index: 0;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.big-tagline {
+    margin-top: 150px;
+}
+.big-tagline h2{
+    color: #fff;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+.big-tagline h2 span{
+    color: #ed2d46;
+}
+.big-tagline .lead{
+    color: #fff;
+    padding: 15px 0;
+}
+.btn_contact{
+    padding: 0;
+    padding: 10px 30px;
+    border: 1px solid #ec364d;
+    color: #fff;
+    border-radius: 0px;
+    transition: .5s all ease-in-out;
+    margin-top: 20px;
+    position: relative;
+}
+.btn_contact::after{
+	content: "";
+    background: #ed2d46;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	border-radius: 0px 50px 0px 0px; 
+    transition: .3s linear;
+}
+.btn_contact:hover:after{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 0px;
+    color: #fff;
+}
+.btn_contact:hover{
+    color: #fff;
+}
+
+
+.about_section{
+	background: url(../images/about-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: 40px 15px;
+}
+.about_section h4{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: #999;
+}
+.about_section h2{
+    font-size: 38px;
+    font-weight: 600;
+    padding: 0 0 10px;
+    margin: 0;
+    line-height: 62px;
+    margin-top: 0;
+    text-transform: none;
+}
+.about_section p{
+    margin: 10px 0;
+}
+.btn_learn{
+    padding: 0;
+    padding: 10px 30px;
+    border: 1px solid #ec364d;
+    color: #000;
+    border-radius: 0px;
+    transition: .5s all ease-in-out;
+    margin-top: 20px;
+}
+.btn_learn:hover{
+    background-color: #ed2d46;
+    color: #fff;
+}
+.mission_part button {
+    color: #000;
+    background: transparent;
+    padding: 4px 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border: 1px solid #ed2d46;
+}
+.mission_part button:hover{
+    background-color: #ec364d;
+    color: #fff;
+}
+.Mission{
+    padding-top: 30px;
+    background-color: #f9f9f9;
+}
+.post_media{
+    position: relative;
+    overflow: hidden;
+}
+.link_icon{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.post_media:hover .link_icon{
+    top: 60%;
+    opacity: 1;
+}
+.link_icon ul{
+    list-style: none;
+}
+.link_icon ul li a{
+    text-decoration: none;
+    background-color: #ed2d46;
+    padding: 10px 20px;
+    opacity: .5;
+}
+.link_icon ul li i{
+    color: #fff;
+}
+.dit_box{
+    background-color: #ed2d46;
+    padding: 15px 10px;
+    text-align: left;
+}
+.dit_box h3{
+    color: #fff;
+    font-size: 25sspx;
+    font-weight: 600;
+}
+.dit_box p{
+    margin-top: 15px;
+    color: #fff;
+}
+
+.pricing_part, .section_title{
+    background-color: #f9f9f9;
+}
+.pricing_menu{
+    border: 0;
+    border-radius: 0px;
+    box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    transition: all .3s ease-in-out;
+    padding: 2.25rem 0;
+    position: relative;
+    will-change: transform;
+}
+
+.pricing_menu::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #ed2d46;
+    transition: 0.5s all ease-in-out;
+}
+.pricing_menu:hover {
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+.pricing_menu:hover:after {
+    width: 100%;
+}
+.card_block h4{
+    background-color: #ec364d;
+    padding: 15px 0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.card_menu .btn_cart{
+    background-color: #ec364d;
+    padding: 0;
+    padding: 4px 30px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.card_menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card_menu ul li{
+    margin: 15px 0;
+}
+.card_menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.card_menu ul li a i{
+    margin-right: 10px;
+}
+.section_title{
+    background-color: #f9f9f9;
+}
+.team_img{
+    position: relative;
+    overflow: hidden;
+}
+.team_img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #ec364d;
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+.team_img:hover::before{
+    height: 100%;
+}
+.team_social{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.team_img:hover .team_social{
+    top: 80%;
+    opacity: 1;
+}
+.team_social ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team_social ul li{
+    margin: 0 8px;
+}
+.team_social ul li a{
+    text-decoration: none;
+}
+.team_social ul li a i{
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 40px;
+    height: 40px;
+    transition: .5s all ease-in-out;
+}
+.team_social ul li a i:hover{
+    background-color: #ec364d;
+}
+.team{
+	box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    border-radius: 10px;
+}
+.team_box{
+    padding: 15px 10px;
+}
+.widget_title h3{
+    font-size: 25px;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0;
+}
+.widget_title small{
+    font-size: 16px;
+    color: #999;
+}
+.team_box p{
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+
+.footer-links a {
+    color: #010101;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer a:hover {
+    color: #ed2d46;
+}
+.footer_company a{
+    text-decoration: none;
+    color: #ed2d46;
+}
+footer{
+    background-color: #999;
+}
+.services_part{
+    background-image: url(../images/barber_all.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    position: relative;
+    z-index: 0;
+}
+.services_part::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.our_part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.our_part h1{
+    color: #fff;
+    font-size: 55px;
+}
+.service_wrap{
+    background-color: #f9f9f9;
+}
+.service_back{
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+	box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    transition: .5s all ease-in-out;
+}
+.service_back:hover .service_img img{
+    border-radius: 100%;
+}
+.service_img img{
+    width: 20%;
+    transition: .5s all ease-in-out;
+    margin-bottom: 15px;
+}
+.service_bar h4{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.service_bar p{
+    color: #010101;
+    font-size: 16px;
+}
+.service_wrap h6{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #000;
+}
+.service_wrap h1{
+    font-size: 50px;
+    color: #010101;
+}
+.service_wrap p{
+    margin-bottom: 60px;
+}
+.service_wrap span{
+    display: block;
+    height: 5px;
+    width: 10%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ec364d;
+}
+
+
+.contact_us{
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
